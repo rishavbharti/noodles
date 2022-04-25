@@ -31,7 +31,7 @@ export const productsSlice = createSlice({
         state.status = 'loading';
       })
       .addCase(fetchProducts.fulfilled, (state, action) => {
-        state.status = 'idle';
+        state.status = 'success';
 
         const productsByCountries = {};
         const productsByBrands = {};

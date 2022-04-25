@@ -9,7 +9,14 @@ const BrandCard = (props) => {
   return (
     <Link to={`/brand/${name}`}>
       <div className='brand-card'>
-        <img src={image} alt={name} className='brand-image' />
+        <img
+          src={image}
+          alt={name}
+          className='brand-image'
+          loading='lazy'
+          width='200'
+          height='auto'
+        />
         <h3>{name}</h3>
         <p>Total variety of noodles under brand: {totalVarieties}</p>
 
